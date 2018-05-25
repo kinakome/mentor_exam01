@@ -33,7 +33,7 @@
 
         <div class="row">
           <div class="input-field col s12">
-            <%= f.select :author_id, [["hello", 1], ["this", 2]] %>
+            <%= f.select :author_id, Author.all.map{|o| [o.family_name, o.id]} %>
             <label>著者</label>
           </div>
         </div>

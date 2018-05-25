@@ -16,3 +16,5 @@ module MentorExam01
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+Rails.application.config.assets.paths << Rails.root.join("vendor", "original_assets", "images")
